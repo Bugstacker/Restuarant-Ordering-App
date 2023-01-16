@@ -115,11 +115,9 @@ function thanks() {
     document.querySelector(".order-container").innerHTML = `
         <h3 class="thanks" id="thanks">Thanks, ${userName}! Your order is on its way!</h3>
         `
-        document.addEventListener('click', function(e) {
-            if(e.target.dataset.buy) {
-                location.reload()
-            }
-    })
+    setTimeout(function(){
+            location.reload()
+    }, 3000) 
 
 }
 // rendering the menu section
